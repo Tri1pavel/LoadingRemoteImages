@@ -7,26 +7,43 @@
 
 import Foundation
 
-protocol DrinkPresenterDelegate: AnyObject {
+protocol DrinkViewProtocol: AnyObject {
     func presentDrinks()
     func presentAlert(with title: String?, message: String)
 }
 
-class DrinkPresenter {
-    weak var delegate: DrinkPresenterDelegate?
-    private let model: DrinkModel = DrinkModel()
+protocol DrinkViewPresenterProtocol: AnyObject {
+    var items: [DrinkItem] { get }
+    var count: Int { get }
     
-    init(view delegate: DrinkPresenterDelegate) {
+    func getDrinks()
+}
+
+class DrinkPresenter {
+    private weak var delegate: DrinkViewProtocol?
+    private let networkAPI: NetworkDataFetchableProtocol
+    private let model: DrinkModel
+    
+    required init(view delegate: DrinkViewProtocol,
+                  networkAPI: NetworkDataFetchableProtocol) {
         self.delegate = delegate
+        self.networkAPI = networkAPI
+        self.model = DrinkModel()
     }
 }
 
-extension DrinkPresenter {
-    func setViewDelegate(_ delegate: DrinkPresenterDelegate) {
-        self.delegate = delegate
+extension DrinkPresenter: DrinkViewPresenterProtocol {
+    /// Drink items for representing on table view controller
+    var items: [DrinkItem] {
+        self.model.items
     }
+    /// Drink items count
+    var count: Int {
+        self.model.count
+    }
+    /// Fetch drink items
     func getDrinks() {
-        NetworkLayer.request(endpoint: DrinkEndpoint.getDrinks) { [weak self] (result: Result<DrinkResponse, Error>) in
+        self.networkAPI.performRequest(endpoint: DrinkEndpoint.getDrinks) { [weak self] (result: Result<DrinkResponse, Error>) in
             switch result {
             case .success(let response):
                 let drinks = response.drinks
@@ -37,13 +54,5 @@ extension DrinkPresenter {
                 self?.delegate?.presentAlert(with: title, message: error.localizedDescription)
             }
         }
-    }
-    /// Drink items for representing on table view controller
-    var items: [DrinkItem] {
-        self.model.items
-    }
-    /// Drink items count
-    var count: Int {
-        self.model.count
     }
 }
