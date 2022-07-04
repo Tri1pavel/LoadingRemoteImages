@@ -9,11 +9,13 @@
 /* Begin PBXBuildFile section */
 		3395949628732CDF00ABFDE7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3395949528732CDF00ABFDE7 /* AppDelegate.m */; };
 		3395949928732CDF00ABFDE7 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3395949828732CDF00ABFDE7 /* SceneDelegate.m */; };
-		3395949C28732CDF00ABFDE7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3395949B28732CDF00ABFDE7 /* ViewController.m */; };
 		3395949F28732CDF00ABFDE7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3395949D28732CDF00ABFDE7 /* Main.storyboard */; };
 		339594A128732CE000ABFDE7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 339594A028732CE000ABFDE7 /* Assets.xcassets */; };
 		339594A428732CE000ABFDE7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 339594A228732CE000ABFDE7 /* LaunchScreen.storyboard */; };
 		339594A728732CE000ABFDE7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 339594A628732CE000ABFDE7 /* main.m */; };
+		339594B328732DC400ABFDE7 /* DrinksTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 339594B228732DC400ABFDE7 /* DrinksTableViewController.m */; };
+		339594B628732EA100ABFDE7 /* DrinkItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 339594B528732EA100ABFDE7 /* DrinkItem.m */; };
+		339594BD2873A3DE00ABFDE7 /* DrinkCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 339594BC2873A3DE00ABFDE7 /* DrinkCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,13 +24,17 @@
 		3395949528732CDF00ABFDE7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		3395949728732CDF00ABFDE7 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
 		3395949828732CDF00ABFDE7 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
-		3395949A28732CDF00ABFDE7 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		3395949B28732CDF00ABFDE7 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		3395949E28732CDF00ABFDE7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		339594A028732CE000ABFDE7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		339594A328732CE000ABFDE7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		339594A528732CE000ABFDE7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		339594A628732CE000ABFDE7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		339594B128732DC400ABFDE7 /* DrinksTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = DrinksTableViewController.h; path = "LRI/Drink MVP/Views/DrinksTableViewController.h"; sourceTree = SOURCE_ROOT; };
+		339594B228732DC400ABFDE7 /* DrinksTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = DrinksTableViewController.m; path = "LRI/Drink MVP/Views/DrinksTableViewController.m"; sourceTree = SOURCE_ROOT; };
+		339594B528732EA100ABFDE7 /* DrinkItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DrinkItem.m; sourceTree = "<group>"; };
+		339594B728732FBC00ABFDE7 /* DrinkItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DrinkItem.h; sourceTree = "<group>"; };
+		339594BB2873A3DE00ABFDE7 /* DrinkCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DrinkCell.h; sourceTree = "<group>"; };
+		339594BC2873A3DE00ABFDE7 /* DrinkCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DrinkCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,8 +71,7 @@
 				3395949528732CDF00ABFDE7 /* AppDelegate.m */,
 				3395949728732CDF00ABFDE7 /* SceneDelegate.h */,
 				3395949828732CDF00ABFDE7 /* SceneDelegate.m */,
-				3395949A28732CDF00ABFDE7 /* ViewController.h */,
-				3395949B28732CDF00ABFDE7 /* ViewController.m */,
+				339594AD28732D7800ABFDE7 /* Drink MVP */,
 				3395949D28732CDF00ABFDE7 /* Main.storyboard */,
 				339594A028732CE000ABFDE7 /* Assets.xcassets */,
 				339594A228732CE000ABFDE7 /* LaunchScreen.storyboard */,
@@ -74,6 +79,43 @@
 				339594A628732CE000ABFDE7 /* main.m */,
 			);
 			path = LRI;
+			sourceTree = "<group>";
+		};
+		339594AD28732D7800ABFDE7 /* Drink MVP */ = {
+			isa = PBXGroup;
+			children = (
+				339594B028732D8500ABFDE7 /* Model */,
+				339594AF28732D8300ABFDE7 /* Presenter */,
+				339594AE28732D8100ABFDE7 /* Views */,
+			);
+			path = "Drink MVP";
+			sourceTree = "<group>";
+		};
+		339594AE28732D8100ABFDE7 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				339594B128732DC400ABFDE7 /* DrinksTableViewController.h */,
+				339594B228732DC400ABFDE7 /* DrinksTableViewController.m */,
+				339594BB2873A3DE00ABFDE7 /* DrinkCell.h */,
+				339594BC2873A3DE00ABFDE7 /* DrinkCell.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		339594AF28732D8300ABFDE7 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		339594B028732D8500ABFDE7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				339594B728732FBC00ABFDE7 /* DrinkItem.h */,
+				339594B528732EA100ABFDE7 /* DrinkItem.m */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -146,7 +188,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3395949C28732CDF00ABFDE7 /* ViewController.m in Sources */,
+				339594B628732EA100ABFDE7 /* DrinkItem.m in Sources */,
+				339594B328732DC400ABFDE7 /* DrinksTableViewController.m in Sources */,
+				339594BD2873A3DE00ABFDE7 /* DrinkCell.m in Sources */,
 				3395949628732CDF00ABFDE7 /* AppDelegate.m in Sources */,
 				339594A728732CE000ABFDE7 /* main.m in Sources */,
 				3395949928732CDF00ABFDE7 /* SceneDelegate.m in Sources */,
