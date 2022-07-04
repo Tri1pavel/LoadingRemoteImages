@@ -67,8 +67,7 @@
 				33EE1EF8286F41D9008D79AB /* DrinksTableViewController.swift */,
 				3395948128720CB500ABFDE7 /* DrinkCell.swift */,
 			);
-			name = Views;
-			path = "../New Group/Views";
+			path = Views;
 			sourceTree = "<group>";
 		};
 		339594852873059C00ABFDE7 /* Drink MVP */ = {
