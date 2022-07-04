@@ -24,7 +24,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		3395948128720CB500ABFDE7 /* DrinkCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkCell.swift; sourceTree = "<group>"; };
+		3395948128720CB500ABFDE7 /* DrinkCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DrinkCell.swift; path = "../../Drink MVP/Views/DrinkCell.swift"; sourceTree = "<group>"; };
 		339594862873062C00ABFDE7 /* DrinkPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkPresenter.swift; sourceTree = "<group>"; };
 		33EE1EDB286F400B008D79AB /* LRI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LRI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		33EE1EDE286F400B008D79AB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -34,7 +34,7 @@
 		33EE1EEA286F400C008D79AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		33EE1EEC286F400C008D79AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		33EE1EF4286F4095008D79AB /* DrinkItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkItem.swift; sourceTree = "<group>"; };
-		33EE1EF8286F41D9008D79AB /* DrinksTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinksTableViewController.swift; sourceTree = "<group>"; };
+		33EE1EF8286F41D9008D79AB /* DrinksTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DrinksTableViewController.swift; path = "../../Drink MVP/Views/DrinksTableViewController.swift"; sourceTree = "<group>"; };
 		33EE1EFC286F42E6008D79AB /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
 		33EE1EFE286F44E7008D79AB /* DrinkEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkEndpoint.swift; sourceTree = "<group>"; };
 		33EE1F00286F45EB008D79AB /* NetworkLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkLayer.swift; sourceTree = "<group>"; };
