@@ -16,6 +16,7 @@
 		339594B328732DC400ABFDE7 /* DrinksTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 339594B228732DC400ABFDE7 /* DrinksTableViewController.m */; };
 		339594B628732EA100ABFDE7 /* DrinkItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 339594B528732EA100ABFDE7 /* DrinkItem.m */; };
 		339594BD2873A3DE00ABFDE7 /* DrinkCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 339594BC2873A3DE00ABFDE7 /* DrinkCell.m */; };
+		339594C42873AC5900ABFDE7 /* DrinkEndpoint.m in Sources */ = {isa = PBXBuildFile; fileRef = 339594C32873AC5900ABFDE7 /* DrinkEndpoint.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,9 @@
 		339594B728732FBC00ABFDE7 /* DrinkItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DrinkItem.h; sourceTree = "<group>"; };
 		339594BB2873A3DE00ABFDE7 /* DrinkCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DrinkCell.h; sourceTree = "<group>"; };
 		339594BC2873A3DE00ABFDE7 /* DrinkCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DrinkCell.m; sourceTree = "<group>"; };
+		339594C02873A63E00ABFDE7 /* Endpoint.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Endpoint.h; sourceTree = "<group>"; };
+		339594C32873AC5900ABFDE7 /* DrinkEndpoint.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DrinkEndpoint.m; sourceTree = "<group>"; };
+		339594C52873AC6300ABFDE7 /* DrinkEndpoint.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DrinkEndpoint.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +75,7 @@
 				3395949528732CDF00ABFDE7 /* AppDelegate.m */,
 				3395949728732CDF00ABFDE7 /* SceneDelegate.h */,
 				3395949828732CDF00ABFDE7 /* SceneDelegate.m */,
+				339594BE2873A5F400ABFDE7 /* NetworkLayer */,
 				339594AD28732D7800ABFDE7 /* Drink MVP */,
 				3395949D28732CDF00ABFDE7 /* Main.storyboard */,
 				339594A028732CE000ABFDE7 /* Assets.xcassets */,
@@ -116,6 +121,24 @@
 				339594B528732EA100ABFDE7 /* DrinkItem.m */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		339594BE2873A5F400ABFDE7 /* NetworkLayer */ = {
+			isa = PBXGroup;
+			children = (
+				339594BF2873A5FF00ABFDE7 /* Endpoint */,
+			);
+			path = NetworkLayer;
+			sourceTree = "<group>";
+		};
+		339594BF2873A5FF00ABFDE7 /* Endpoint */ = {
+			isa = PBXGroup;
+			children = (
+				339594C02873A63E00ABFDE7 /* Endpoint.h */,
+				339594C52873AC6300ABFDE7 /* DrinkEndpoint.h */,
+				339594C32873AC5900ABFDE7 /* DrinkEndpoint.m */,
+			);
+			path = Endpoint;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -194,6 +217,7 @@
 				3395949628732CDF00ABFDE7 /* AppDelegate.m in Sources */,
 				339594A728732CE000ABFDE7 /* main.m in Sources */,
 				3395949928732CDF00ABFDE7 /* SceneDelegate.m in Sources */,
+				339594C42873AC5900ABFDE7 /* DrinkEndpoint.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
