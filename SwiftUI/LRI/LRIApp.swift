@@ -13,7 +13,7 @@ struct LRIApp: App {
     private var model: DrinkModel = DrinkModel(networkAPI: NetworkLayer.shared)
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            DrinksListView()
                 .environmentObject(model)
         }
     }
