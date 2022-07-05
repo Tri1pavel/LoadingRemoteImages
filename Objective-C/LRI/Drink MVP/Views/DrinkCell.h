@@ -12,6 +12,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface DrinkCell : UITableViewCell
 
+@property (nonatomic) NSString *cachedUrl;
 + (NSString *) identifier;
 - (void)display:(DrinkItem *) item;
 

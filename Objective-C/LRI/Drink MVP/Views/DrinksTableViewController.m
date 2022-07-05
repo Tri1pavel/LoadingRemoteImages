@@ -22,9 +22,17 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    [self.tableView.refreshControl addTarget:self
+                                      action:@selector(refresh)
+                            forControlEvents:UIControlEventValueChanged];
+    
     NetworkLayer *networkAPI = [[NetworkLayer alloc] init];
     self.presenter = [[DrinkPresenter alloc] initWithViewDelegate:self
                                                    withNetworkAPI:networkAPI];
+    [self.presenter getDrinks];
+}
+
+- (void)refresh {
     [self.presenter getDrinks];
 }
 
@@ -58,12 +66,14 @@
         [alert setMessage:message];
         [alert addAction:action];
         [self presentViewController:alert animated:YES completion:nil];
+        [self.refreshControl endRefreshing];
     });
 }
 
 - (void)presentDrinks {
     dispatch_async(dispatch_get_main_queue(), ^{
         [self.tableView reloadData];
+        [self.refreshControl endRefreshing];
     });
 }
 
