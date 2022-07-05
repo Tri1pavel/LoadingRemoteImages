@@ -1,6 +1,6 @@
 Current task: (Loading remote images by API)
 
-Use MVP Design pattern
+Use MVP or MVVM design pattern
 
 1. Add model data for decoding server response.
 2. Create network endpoint protocol.
