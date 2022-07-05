@@ -27,11 +27,9 @@ extension UIImageView {
         self.image = placeholder
         
         if let image = ImageCache.shared.getObject(forKey: urlString)  {
-            DispatchQueue.main.async {
-                // image was fecthed by cache in memory
-                wasFetchedByCache(image, true)
-                return
-            }
+            // image was fecthed by cache in memory
+            wasFetchedByCache(image, true)
+            return
         }
         
         guard let url = URL(string: urlString) else { return }
