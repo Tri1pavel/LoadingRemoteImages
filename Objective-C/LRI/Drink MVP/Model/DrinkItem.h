@@ -7,6 +7,8 @@
 
 #import <Foundation/Foundation.h>
 
+NS_ASSUME_NONNULL_BEGIN
+
 @interface DrinkItem : NSObject <NSCoding>
 
 @property (strong, nonatomic) NSString *strDrink;
@@ -16,3 +18,5 @@
 + (DrinkItem *)withDictionary:(NSMutableDictionary *)dictionary;
 
 @end
+
+NS_ASSUME_NONNULL_END

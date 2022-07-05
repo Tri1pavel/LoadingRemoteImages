@@ -7,7 +7,7 @@
 
 #import "DrinkItem.h"
 
-@interface DrinkItem()
+@interface DrinkItem ()
 
 @end
 
@@ -29,7 +29,7 @@
 
 - (id)initWithStrDrink:(NSString *)strDrink
      withStrDrinkThumb:(NSString *)strDrinkThumb
-           withIDDrink:(NSString *) idDrink {
+           withIDDrink:(NSString *)idDrink {
     self = [super init];
     if (self) {
         self.strDrink = strDrink;

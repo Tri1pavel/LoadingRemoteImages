@@ -9,18 +9,18 @@
 
 @protocol Endpoint
 // http / https
-+ (NSString *) scheme;
+- (NSString *) scheme;
 
 // GET / POST / ...
-+ (NSString *) method;
+- (NSString *) method;
 
 // Sample: www.thecocktaildb.com
-+ (NSString *) baseURL;
+- (NSString *) baseURL;
 
 // Sample: /api/json/v1/1/filter.php
-+ (NSString *) path;
+- (NSString *) path;
 
 // Sample: [URLQueryItem(name: a, value: Alcoholic)]
-+ (NSMutableArray <NSURLQueryItem *> *) parameters;
+- (NSMutableArray <NSURLQueryItem *> *) parameters;
 @end
 

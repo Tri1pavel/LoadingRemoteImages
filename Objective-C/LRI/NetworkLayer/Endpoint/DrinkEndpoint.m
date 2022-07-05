@@ -14,23 +14,23 @@
 
 @implementation DrinkEndpoint
 
-+ (NSString *)scheme {
+- (NSString *)scheme {
     return @"https";
 }
 
-+ (NSString *)method {
+- (NSString *)method {
     return @"GET";
 }
 
-+ (NSString *)baseURL {
+- (NSString *)baseURL {
     return @"www.thecocktaildb.com";
 }
 
-+ (NSString *)path {
+- (NSString *)path {
     return @"/api/json/v1/1/filter.php";
 }
 
-+ (NSMutableArray<NSURLQueryItem *> *)parameters {
+- (NSMutableArray<NSURLQueryItem *> *)parameters {
     return [[NSMutableArray alloc] initWithObjects:[[NSURLQueryItem alloc] initWithName:@"a" value:@"Alcoholic"], nil];
 }
 
