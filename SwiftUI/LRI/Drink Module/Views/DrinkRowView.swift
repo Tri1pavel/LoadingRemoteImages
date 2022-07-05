@@ -49,7 +49,6 @@ struct DrinkRowView: View {
                                     Rectangle()
                                         .opacity(0.7)
                                 }
-                                
                         }
                         
                     }

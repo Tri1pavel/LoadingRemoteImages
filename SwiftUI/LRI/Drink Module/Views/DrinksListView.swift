@@ -11,6 +11,14 @@ struct DrinksListView: View {
     @EnvironmentObject private var model: DrinkModel
     @State private var showingNetworkAlert = false
     
+    var getData: Void {
+        model.getDrinks { error in
+            if let _ = error {
+                showingNetworkAlert.toggle()
+            }
+        }
+    }
+    
     var body: some View {
         GeometryReader { geometry in
             List {
@@ -23,11 +31,10 @@ struct DrinksListView: View {
             }
             .listStyle(PlainListStyle())
             .onAppear {
-                model.getDrinks { error in
-                    if let _ = error {
-                        showingNetworkAlert.toggle()
-                    }
-                }
+                getData
+            }
+            .refreshable {
+                getData
             }
             .alert(model.networkError ?? String(), isPresented: $showingNetworkAlert) {
                 Button("Dismiss", role: .cancel) { }
