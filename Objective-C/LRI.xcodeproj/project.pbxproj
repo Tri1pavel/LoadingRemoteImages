@@ -1,0 +1,468 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3395949628732CDF00ABFDE7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3395949528732CDF00ABFDE7 /* AppDelegate.m */; };
+		3395949928732CDF00ABFDE7 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3395949828732CDF00ABFDE7 /* SceneDelegate.m */; };
+		3395949F28732CDF00ABFDE7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3395949D28732CDF00ABFDE7 /* Main.storyboard */; };
+		339594A128732CE000ABFDE7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 339594A028732CE000ABFDE7 /* Assets.xcassets */; };
+		339594A428732CE000ABFDE7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 339594A228732CE000ABFDE7 /* LaunchScreen.storyboard */; };
+		339594A728732CE000ABFDE7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 339594A628732CE000ABFDE7 /* main.m */; };
+		339594B328732DC400ABFDE7 /* DrinksTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 339594B228732DC400ABFDE7 /* DrinksTableViewController.m */; };
+		339594B628732EA100ABFDE7 /* DrinkItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 339594B528732EA100ABFDE7 /* DrinkItem.m */; };
+		339594BD2873A3DE00ABFDE7 /* DrinkCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 339594BC2873A3DE00ABFDE7 /* DrinkCell.m */; };
+		339594C42873AC5900ABFDE7 /* DrinkEndpoint.m in Sources */ = {isa = PBXBuildFile; fileRef = 339594C32873AC5900ABFDE7 /* DrinkEndpoint.m */; };
+		339594C92873C4AC00ABFDE7 /* NetworkLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 339594C82873C4AC00ABFDE7 /* NetworkLayer.m */; };
+		339594CE2874332E00ABFDE7 /* DrinkPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 339594CD2874332E00ABFDE7 /* DrinkPresenter.m */; };
+		339594D02874424D00ABFDE7 /* DrinkModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 339594CF2874424D00ABFDE7 /* DrinkModel.m */; };
+		339594D528744FDB00ABFDE7 /* UIImageView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 339594D428744FDB00ABFDE7 /* UIImageView+Extension.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3395949128732CDF00ABFDE7 /* LRI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LRI.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3395949428732CDF00ABFDE7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		3395949528732CDF00ABFDE7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		3395949728732CDF00ABFDE7 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		3395949828732CDF00ABFDE7 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		3395949E28732CDF00ABFDE7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		339594A028732CE000ABFDE7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		339594A328732CE000ABFDE7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		339594A528732CE000ABFDE7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		339594A628732CE000ABFDE7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		339594B128732DC400ABFDE7 /* DrinksTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = DrinksTableViewController.h; path = "LRI/Drink MVP/Views/DrinksTableViewController.h"; sourceTree = SOURCE_ROOT; };
+		339594B228732DC400ABFDE7 /* DrinksTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = DrinksTableViewController.m; path = "LRI/Drink MVP/Views/DrinksTableViewController.m"; sourceTree = SOURCE_ROOT; };
+		339594B528732EA100ABFDE7 /* DrinkItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DrinkItem.m; sourceTree = "<group>"; };
+		339594B728732FBC00ABFDE7 /* DrinkItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DrinkItem.h; sourceTree = "<group>"; };
+		339594BB2873A3DE00ABFDE7 /* DrinkCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DrinkCell.h; sourceTree = "<group>"; };
+		339594BC2873A3DE00ABFDE7 /* DrinkCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DrinkCell.m; sourceTree = "<group>"; };
+		339594C02873A63E00ABFDE7 /* Endpoint.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Endpoint.h; sourceTree = "<group>"; };
+		339594C32873AC5900ABFDE7 /* DrinkEndpoint.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DrinkEndpoint.m; sourceTree = "<group>"; };
+		339594C52873AC6300ABFDE7 /* DrinkEndpoint.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DrinkEndpoint.h; sourceTree = "<group>"; };
+		339594C62873C43000ABFDE7 /* NetworkDataFetchableProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetworkDataFetchableProtocol.h; sourceTree = "<group>"; };
+		339594C72873C4A100ABFDE7 /* NetworkLayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetworkLayer.h; sourceTree = "<group>"; };
+		339594C82873C4AC00ABFDE7 /* NetworkLayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NetworkLayer.m; sourceTree = "<group>"; };
+		339594CA2874323800ABFDE7 /* DrinkViewProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DrinkViewProtocol.h; sourceTree = "<group>"; };
+		339594CB2874326900ABFDE7 /* DrinkViewPresenterProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DrinkViewPresenterProtocol.h; sourceTree = "<group>"; };
+		339594CC2874332000ABFDE7 /* DrinkPresenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DrinkPresenter.h; sourceTree = "<group>"; };
+		339594CD2874332E00ABFDE7 /* DrinkPresenter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DrinkPresenter.m; sourceTree = "<group>"; };
+		339594CF2874424D00ABFDE7 /* DrinkModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DrinkModel.m; sourceTree = "<group>"; };
+		339594D12874425500ABFDE7 /* DrinkModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DrinkModel.h; sourceTree = "<group>"; };
+		339594D328744F4C00ABFDE7 /* UIImageView+Extension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImageView+Extension.h"; sourceTree = "<group>"; };
+		339594D428744FDB00ABFDE7 /* UIImageView+Extension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+Extension.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3395948E28732CDF00ABFDE7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3395948828732CDF00ABFDE7 = {
+			isa = PBXGroup;
+			children = (
+				3395949328732CDF00ABFDE7 /* LRI */,
+				3395949228732CDF00ABFDE7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3395949228732CDF00ABFDE7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3395949128732CDF00ABFDE7 /* LRI.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3395949328732CDF00ABFDE7 /* LRI */ = {
+			isa = PBXGroup;
+			children = (
+				3395949428732CDF00ABFDE7 /* AppDelegate.h */,
+				3395949528732CDF00ABFDE7 /* AppDelegate.m */,
+				3395949728732CDF00ABFDE7 /* SceneDelegate.h */,
+				3395949828732CDF00ABFDE7 /* SceneDelegate.m */,
+				339594D228744F1F00ABFDE7 /* Extensions */,
+				339594BE2873A5F400ABFDE7 /* NetworkLayer */,
+				339594AD28732D7800ABFDE7 /* Drink MVP */,
+				3395949D28732CDF00ABFDE7 /* Main.storyboard */,
+				339594A028732CE000ABFDE7 /* Assets.xcassets */,
+				339594A228732CE000ABFDE7 /* LaunchScreen.storyboard */,
+				339594A528732CE000ABFDE7 /* Info.plist */,
+				339594A628732CE000ABFDE7 /* main.m */,
+			);
+			path = LRI;
+			sourceTree = "<group>";
+		};
+		339594AD28732D7800ABFDE7 /* Drink MVP */ = {
+			isa = PBXGroup;
+			children = (
+				339594B028732D8500ABFDE7 /* Model */,
+				339594AF28732D8300ABFDE7 /* Presenter */,
+				339594AE28732D8100ABFDE7 /* Views */,
+			);
+			path = "Drink MVP";
+			sourceTree = "<group>";
+		};
+		339594AE28732D8100ABFDE7 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				339594B128732DC400ABFDE7 /* DrinksTableViewController.h */,
+				339594B228732DC400ABFDE7 /* DrinksTableViewController.m */,
+				339594BB2873A3DE00ABFDE7 /* DrinkCell.h */,
+				339594BC2873A3DE00ABFDE7 /* DrinkCell.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		339594AF28732D8300ABFDE7 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				339594CA2874323800ABFDE7 /* DrinkViewProtocol.h */,
+				339594CB2874326900ABFDE7 /* DrinkViewPresenterProtocol.h */,
+				339594CC2874332000ABFDE7 /* DrinkPresenter.h */,
+				339594CD2874332E00ABFDE7 /* DrinkPresenter.m */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		339594B028732D8500ABFDE7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				339594D12874425500ABFDE7 /* DrinkModel.h */,
+				339594CF2874424D00ABFDE7 /* DrinkModel.m */,
+				339594B728732FBC00ABFDE7 /* DrinkItem.h */,
+				339594B528732EA100ABFDE7 /* DrinkItem.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		339594BE2873A5F400ABFDE7 /* NetworkLayer */ = {
+			isa = PBXGroup;
+			children = (
+				339594C62873C43000ABFDE7 /* NetworkDataFetchableProtocol.h */,
+				339594C72873C4A100ABFDE7 /* NetworkLayer.h */,
+				339594C82873C4AC00ABFDE7 /* NetworkLayer.m */,
+				339594BF2873A5FF00ABFDE7 /* Endpoint */,
+			);
+			path = NetworkLayer;
+			sourceTree = "<group>";
+		};
+		339594BF2873A5FF00ABFDE7 /* Endpoint */ = {
+			isa = PBXGroup;
+			children = (
+				339594C02873A63E00ABFDE7 /* Endpoint.h */,
+				339594C52873AC6300ABFDE7 /* DrinkEndpoint.h */,
+				339594C32873AC5900ABFDE7 /* DrinkEndpoint.m */,
+			);
+			path = Endpoint;
+			sourceTree = "<group>";
+		};
+		339594D228744F1F00ABFDE7 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				339594D328744F4C00ABFDE7 /* UIImageView+Extension.h */,
+				339594D428744FDB00ABFDE7 /* UIImageView+Extension.m */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3395949028732CDF00ABFDE7 /* LRI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 339594AA28732CE000ABFDE7 /* Build configuration list for PBXNativeTarget "LRI" */;
+			buildPhases = (
+				3395948D28732CDF00ABFDE7 /* Sources */,
+				3395948E28732CDF00ABFDE7 /* Frameworks */,
+				3395948F28732CDF00ABFDE7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LRI;
+			productName = LRI;
+			productReference = 3395949128732CDF00ABFDE7 /* LRI.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3395948928732CDF00ABFDE7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					3395949028732CDF00ABFDE7 = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+				};
+			};
+			buildConfigurationList = 3395948C28732CDF00ABFDE7 /* Build configuration list for PBXProject "LRI" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3395948828732CDF00ABFDE7;
+			productRefGroup = 3395949228732CDF00ABFDE7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3395949028732CDF00ABFDE7 /* LRI */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3395948F28732CDF00ABFDE7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				339594A428732CE000ABFDE7 /* LaunchScreen.storyboard in Resources */,
+				339594A128732CE000ABFDE7 /* Assets.xcassets in Resources */,
+				3395949F28732CDF00ABFDE7 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3395948D28732CDF00ABFDE7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				339594C92873C4AC00ABFDE7 /* NetworkLayer.m in Sources */,
+				339594B628732EA100ABFDE7 /* DrinkItem.m in Sources */,
+				339594B328732DC400ABFDE7 /* DrinksTableViewController.m in Sources */,
+				339594CE2874332E00ABFDE7 /* DrinkPresenter.m in Sources */,
+				339594D02874424D00ABFDE7 /* DrinkModel.m in Sources */,
+				339594BD2873A3DE00ABFDE7 /* DrinkCell.m in Sources */,
+				3395949628732CDF00ABFDE7 /* AppDelegate.m in Sources */,
+				339594D528744FDB00ABFDE7 /* UIImageView+Extension.m in Sources */,
+				339594A728732CE000ABFDE7 /* main.m in Sources */,
+				3395949928732CDF00ABFDE7 /* SceneDelegate.m in Sources */,
+				339594C42873AC5900ABFDE7 /* DrinkEndpoint.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		3395949D28732CDF00ABFDE7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3395949E28732CDF00ABFDE7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		339594A228732CE000ABFDE7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				339594A328732CE000ABFDE7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		339594A828732CE000ABFDE7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		339594A928732CE000ABFDE7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		339594AB28732CE000ABFDE7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LRI/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = l1ttle.LRI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		339594AC28732CE000ABFDE7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LRI/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = l1ttle.LRI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3395948C28732CDF00ABFDE7 /* Build configuration list for PBXProject "LRI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				339594A828732CE000ABFDE7 /* Debug */,
+				339594A928732CE000ABFDE7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		339594AA28732CE000ABFDE7 /* Build configuration list for PBXNativeTarget "LRI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				339594AB28732CE000ABFDE7 /* Debug */,
+				339594AC28732CE000ABFDE7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3395948928732CDF00ABFDE7 /* Project object */;
+}

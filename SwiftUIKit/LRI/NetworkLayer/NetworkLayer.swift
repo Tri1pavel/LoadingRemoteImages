@@ -7,9 +7,17 @@
 
 import Foundation
 
-struct NetworkLayer {
+protocol NetworkDataFetchableProtocol {
     @discardableResult
-    static func request<T: Codable>(endpoint: Endpoint,
+    func performRequest<T: Codable>(endpoint: Endpoint,
+                                    completion: @escaping (Result<T, Error>) -> ()) -> URLSessionDataTask?
+}
+
+class NetworkLayer: NetworkDataFetchableProtocol {
+    static let shared = NetworkLayer()
+    
+    @discardableResult
+    func performRequest<T: Codable>(endpoint: Endpoint,
                                     completion: @escaping (Result<T, Error>) -> ())
     -> URLSessionDataTask? {
         var components = URLComponents()

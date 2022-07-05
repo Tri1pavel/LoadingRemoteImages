@@ -8,14 +8,14 @@
 import UIKit
 
 class DrinksTableViewController: UITableViewController {
-    private var presenter: DrinkPresenter? = nil
+    private var presenter: DrinkViewPresenterProtocol? = nil
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         self.refreshControl?.addTarget(self, action: #selector(refresh), for: .valueChanged)
         
-        presenter = DrinkPresenter(view: self)
+        presenter = DrinkPresenter(view: self, networkAPI: NetworkLayer.shared)
         presenter?.getDrinks()
     }
     
@@ -50,8 +50,8 @@ extension DrinksTableViewController {
     }
 }
 
-// MARK: DrinkPresenterDelegate
-extension DrinksTableViewController: DrinkPresenterDelegate {
+// MARK: DrinkViewProtocol
+extension DrinksTableViewController: DrinkViewProtocol {
     func presentDrinks() {
         DispatchQueue.main.async {
             defer { self.refreshControl?.endRefreshing() }
