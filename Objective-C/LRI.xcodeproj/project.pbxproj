@@ -18,6 +18,8 @@
 		339594BD2873A3DE00ABFDE7 /* DrinkCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 339594BC2873A3DE00ABFDE7 /* DrinkCell.m */; };
 		339594C42873AC5900ABFDE7 /* DrinkEndpoint.m in Sources */ = {isa = PBXBuildFile; fileRef = 339594C32873AC5900ABFDE7 /* DrinkEndpoint.m */; };
 		339594C92873C4AC00ABFDE7 /* NetworkLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 339594C82873C4AC00ABFDE7 /* NetworkLayer.m */; };
+		339594CE2874332E00ABFDE7 /* DrinkPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 339594CD2874332E00ABFDE7 /* DrinkPresenter.m */; };
+		339594D02874424D00ABFDE7 /* DrinkModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 339594CF2874424D00ABFDE7 /* DrinkModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +45,12 @@
 		339594C62873C43000ABFDE7 /* NetworkDataFetchableProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetworkDataFetchableProtocol.h; sourceTree = "<group>"; };
 		339594C72873C4A100ABFDE7 /* NetworkLayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetworkLayer.h; sourceTree = "<group>"; };
 		339594C82873C4AC00ABFDE7 /* NetworkLayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NetworkLayer.m; sourceTree = "<group>"; };
+		339594CA2874323800ABFDE7 /* DrinkViewProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DrinkViewProtocol.h; sourceTree = "<group>"; };
+		339594CB2874326900ABFDE7 /* DrinkViewPresenterProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DrinkViewPresenterProtocol.h; sourceTree = "<group>"; };
+		339594CC2874332000ABFDE7 /* DrinkPresenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DrinkPresenter.h; sourceTree = "<group>"; };
+		339594CD2874332E00ABFDE7 /* DrinkPresenter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DrinkPresenter.m; sourceTree = "<group>"; };
+		339594CF2874424D00ABFDE7 /* DrinkModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DrinkModel.m; sourceTree = "<group>"; };
+		339594D12874425500ABFDE7 /* DrinkModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DrinkModel.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +122,10 @@
 		339594AF28732D8300ABFDE7 /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
+				339594CA2874323800ABFDE7 /* DrinkViewProtocol.h */,
+				339594CB2874326900ABFDE7 /* DrinkViewPresenterProtocol.h */,
+				339594CC2874332000ABFDE7 /* DrinkPresenter.h */,
+				339594CD2874332E00ABFDE7 /* DrinkPresenter.m */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -121,6 +133,8 @@
 		339594B028732D8500ABFDE7 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				339594D12874425500ABFDE7 /* DrinkModel.h */,
+				339594CF2874424D00ABFDE7 /* DrinkModel.m */,
 				339594B728732FBC00ABFDE7 /* DrinkItem.h */,
 				339594B528732EA100ABFDE7 /* DrinkItem.m */,
 			);
@@ -221,6 +235,8 @@
 				339594C92873C4AC00ABFDE7 /* NetworkLayer.m in Sources */,
 				339594B628732EA100ABFDE7 /* DrinkItem.m in Sources */,
 				339594B328732DC400ABFDE7 /* DrinksTableViewController.m in Sources */,
+				339594CE2874332E00ABFDE7 /* DrinkPresenter.m in Sources */,
+				339594D02874424D00ABFDE7 /* DrinkModel.m in Sources */,
 				339594BD2873A3DE00ABFDE7 /* DrinkCell.m in Sources */,
 				3395949628732CDF00ABFDE7 /* AppDelegate.m in Sources */,
 				339594A728732CE000ABFDE7 /* main.m in Sources */,

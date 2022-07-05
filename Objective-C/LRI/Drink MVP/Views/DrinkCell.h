@@ -6,12 +6,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "DrinkItem.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface DrinkCell : UITableViewCell
 
 + (NSString *) identifier;
+- (void)display:(DrinkItem *) item;
 
 @end
 

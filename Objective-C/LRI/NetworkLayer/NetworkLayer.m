@@ -40,7 +40,7 @@
             completion(NSMutableArray.new, customError);
             return;
         }
-        
+                
         NSMutableArray <DrinkItem *> *items = NSMutableArray.new;
         for (NSMutableDictionary *dictionary in [jsonArray valueForKey:@"drinks"]) {
             DrinkItem *item = [DrinkItem withDictionary:dictionary];

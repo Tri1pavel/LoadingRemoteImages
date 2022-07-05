@@ -21,4 +21,8 @@
     [super setSelected:selected animated:animated];
 }
 
+- (void)display:(DrinkItem *) item {
+    
+}
+
 @end
